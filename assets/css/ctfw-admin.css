@@ -1,0 +1,43 @@
+/* ctfw-admin.css */
+
+.ctfw-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ctfw-products-table {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.ctfw-category-selection {
+  flex: 0 0 300px;
+  background-color: #f7f7f7;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.ctfw-category-selection select {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: none;
+}
+
+.ctfw-category-selection input.button-primary {
+  width: 100%;
+}
+
+.ctfw-products-table td:first-child {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .ctfw-content {
+    display: block;
+  }
+  .ctfw-products-table,
+  .ctfw-category-selection {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
